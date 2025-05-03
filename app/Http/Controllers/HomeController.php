@@ -13,9 +13,9 @@ class HomeController extends Controller
         $paymentObj->setOrderNo("123");
         $paymentObj->setAmount("100");
         $paymentObj->setSuccessUrl("https://localhost:8000/success");
-        $paymentObj->setCancelUrl("https://localhost:8000/success");
-        $paymentObj->setBackendUrl("https://localhost:8000/success");
-        $paymentObj->setFailedUrl("https://localhost:8000/success");
+        $paymentObj->setCancelUrl("https://localhost:8000/cancel");
+        $paymentObj->setBackendUrl("https://localhost:8000/backend");
+        $paymentObj->setFailedUrl("https://localhost:8000/failed");
         $paymentObj->setCustomFields([
             "refId" => "123"
         ]);
